@@ -37,6 +37,7 @@ export const Primary: Story = {
   },
 }
 
+// Hier wird die Secondary Variante definiert
 export const Secondary: Story = {
   args: {
     label: 'Secondary Button',
