@@ -2,7 +2,7 @@
     <button 
         class="px-4 py-2 rounded-lg cursor-pointer" 
         :class="type == 'primary' ? 'bg-primary text-white hover:bg-primary-hover'  : 'bg-transparent text-primary border border-primary hover:text-primary-hover hover:border-primary-hover'" 
-        @click="emit('click')">
+        @click="emit('button-pressed')">
         {{ label }}
     </button>
 </template>
@@ -13,5 +13,5 @@ const { label, type = 'secondary'} = defineProps<{
     type?: 'primary' | 'secondary';
 }>();
 
-const emit = defineEmits(['click']);
+const emit = defineEmits(['button-pressed']);
 </script>
